@@ -96,7 +96,7 @@ def ProcuraEmpate(matriz): # Ver se tem espaços vazios, caso tenha não decreta
 # --------Toda a dor de cabeça e lógica esta centralizada aqui! algoritmo MiniMax()-------- #
 
 # Contextualizando: é responsável por calcular a utilidade de um determinado estado do jogo para um jogador, 
-# levando em consideração todas as jogadas possíveis até o final do jogo. O valor retornado pelo minimax é 
+# levando em consideração todas as jogadas possíveis até o final do jogo, por busca exata. O valor retornado pelo minimax é 
 # usado para determinar qual é a melhor jogada para um jogador em um determinado estado do jogo. A função 
 # é chamada recursivamente para explorar todas as possibilidades de jogadas e encontrar a melhor estratégia 
 # para o jogador atual.
