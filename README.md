@@ -1,7 +1,7 @@
 # JogoDaVelha_IA
 
 Jogo da velha com inteligência artificial que pensa na melhor jogada toda vez que é sua vez de jogar, 
-por meio da busca heurística implementada no algoritmo minimax que simula a jogada até o seu possível fim e pontue como maior (caso for ganhar) ou menor valor (caso for perder), 
+por meio da busca exata implementada no algoritmo minimax que simula a jogada até o seu possível fim e pontue como maior (caso for ganhar) ou menor valor (caso for perder), 
 escolhendo sempre a de maior valor para fazer a sua jogada.
 
 O algoritmo Minimax:
