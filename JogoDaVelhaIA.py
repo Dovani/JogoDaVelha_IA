@@ -96,7 +96,7 @@ def ProcuraEmpate(matriz): # Ver se tem espaços vazios, caso tenha não decreta
 # --------Toda a dor de cabeça e lógica esta centralizada aqui! algoritmo MiniMax()-------- #
 
 # Contextualizando: é responsável por calcular a utilidade de um determinado estado do jogo para um jogador, 
-# levando em consideração todas as jogadas possíveis até o final do jogo, por busca exata. O valor retornado pelo minimax é 
+# levando em consideração todas as jogadas possíveis até o final do jogo. O valor retornado pelo minimax é 
 # usado para determinar qual é a melhor jogada para um jogador em um determinado estado do jogo. A função 
 # é chamada recursivamente para explorar todas as possibilidades de jogadas e encontrar a melhor estratégia 
 # para o jogador atual.
@@ -106,6 +106,13 @@ def ProcuraEmpate(matriz): # Ver se tem espaços vazios, caso tenha não decreta
 # no episódio que ele vende churros para ele mesmo, tecnicamente isso é chamado de recursão, assim ele simula do começo ao 
 # resultado de cada jogada e ao final de tudo retorna a melhor jogada, ou seja a que ele vence ou empata, ou melhor dizendo 
 # ele dá um pontinho para cada umas das situações e se a pontuaçao for a mais alta é a melhor jogada calculada.
+
+# O algoritmo minimax funciona através de busca em uma árvore de jogadas possíveis, e cada nó da árvore é uma jogada possível, 
+# ora é um maximizador (IA), ora é um minimizador (Adversário), e isso se repete até que a árvore atinja a profundidade máxima,
+# no nosso caso é até estourar o limite de casas (9). O algoritmo é bom para o jogo da velha, porém se fosse em jogos maiores e 
+# mais complexos não seria tão viável ficar percorrendo até a jogada final, gastaria muitos recursos do computador até chegar na 
+# finalidade, e fazendo isso a cada vez que o adversário joga torna o gargalo ainda maior.
+
 
 # Recebe a matriz, a profundidade para a arvore, e se está atacando ou defendendo (boolean is_max)
 def minimax(matriz, profundidade, is_max): 
